@@ -41,7 +41,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({depth: 5, globalGraph: true}),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
